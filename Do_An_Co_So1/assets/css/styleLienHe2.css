@@ -1,0 +1,76 @@
+body{
+    background-color: rgba(34, 39, 33, 0.25);
+}
+
+.cotent{
+    width: 75%;
+}
+
+.cotent h3{
+    font-family: 'Times New Roman', Times, serif;
+    color: #ad7959;
+    /* letter-spacing: 2px; */
+    line-height: 35px;
+}
+
+.chuy{
+    line-height: 35px;
+    font-size: larger;
+}
+
+.ThongTin .contact_detail p{
+    line-height: 15px;
+    font-weight: 400;
+}
+
+.cotent .btn{
+    border: 1px solid #ad7959;
+    background-color: #ad7959;
+    color: #ffff;
+    cursor: pointer;
+}
+
+.cotent .btn:hover{
+    background-color: #c19478;
+    border: 1px solid #c19478;
+}
+
+input:hover , textarea:hover{
+    border: 1px solid #ad7959;
+}
+
+.footer{
+    background-color: #f6eee9;;
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+
+
+    .cotent h3{
+        font-size: 0.6rem;
+    }
+
+    .cotent .chuy p{
+        font-size: small;
+    }
+    
+}
+
+@media (max-width:740px) {
+
+    .cotent{
+        width: 100%;
+    }
+
+    .cotent h3{
+        font-size: 1.2rem;
+    }
+
+    .cotent .chuy{
+        width: 100%;
+    }
+
+    .cotent .chuy p{
+        font-size: small;
+    }
+}

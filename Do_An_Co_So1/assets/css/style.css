@@ -1,0 +1,322 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap'); */
+
+*main{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f6eee9;
+}
+
+body{
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Times New Roman', Times, serif;
+    overflow-x: hidden;
+    position: relative;
+    background-color: #f6eee9;
+}
+
+.btn a,span,h6
+p{
+    /* font-family: 'Dosis', sans-serif; */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    font-weight: 500;
+    /* letter-spacing: 2px; */
+}
+
+
+/* h4{
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+} */
+
+.header{
+    width: 100vw;
+    height: 100px;
+    background-color: rgb(246, 238, 233);
+    box-shadow: 0 3px 8px  rgb(0, 0, 0,25%);
+    overflow: hidden;
+}
+
+.cart .cart-icon i{
+    color: #ba917a;
+}
+.icon-tk {
+    color: currentColor;
+    color: #ad7959;
+ }
+ a{
+     text-decoration: none;
+     color: currentColor;
+     font-size: 25px;
+     color: #81553a;
+ }
+ 
+ a:hover{
+     color: #81553a;
+ }
+ 
+ .header-logo img{
+     width: 100px;
+     height: 100px;
+     
+ }
+
+.header-logo img{
+    width: 100px;
+    height: 100px;
+    
+}
+
+
+.header-menu .header-ul .item, .item-menu-two{
+    padding: 10px 20px;
+    transition: all .1s ease;
+    border-bottom: 0px solid #c39d86;
+    border-top: 0px solid #c39d86f4;
+    cursor: pointer;
+}
+
+.header-menu .header-ul .item:hover{
+    border-bottom: 3px solid #c39d86;
+}
+
+.item-menu-two{
+    position: relative;
+}
+
+.item-logout{
+    display: none;
+    position: absolute;
+}
+
+.item-menu-two:hover .item-logout{
+    display: block;
+}
+
+.logout a{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.mobile-toggler .bars{
+    color: #c59170;
+    font-size: 30px;
+    border: 1px solid #c59170;
+    box-shadow: 0px 3px 8px rgb(197, 145, 112);
+    border-style: double;
+    
+}
+/* end menu */
+
+/* Model */
+.modal-content{
+    border-radius: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: #f6eee9;
+}
+
+.modal-dialog{
+    margin: 0;
+    width: 430px;
+}
+
+.modal-header{
+    width: 88%;
+    margin: 0 auto;
+    border-bottom: 10px;
+    border-bottom: 1px solid #c39d86;
+}
+
+.modal-body{
+    width: 88%;
+    margin: 0 auto;
+    padding: 75px 0 0 0;
+    flex: unset;
+    
+}
+
+.fade .modal-header img{
+    width: 200px;
+    height: 200px;
+}
+
+.fade__two{
+    width: 450px;
+    height: 200px;
+}
+
+.thongbao_mode .modal-header h5,
+.modal-body_two p {
+    color: #ad795b;
+}
+
+.modal-body .modal-line{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* padding: 7px 0; */
+    padding-bottom: 7px;
+    margin-left: 7px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: all .1s ease;
+    color: #c39d86;
+    border-bottom: 1px solid #c39d86;
+}
+
+.modal-body .modal-line:hover{
+    color: #fefefe;
+    border-bottom: 2px solid #fefefe;
+}
+
+.modal-line a{
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    color: #c39d86;
+}
+
+.modal-line i{
+    color: currentColor;
+    font-size: 30px;
+    width: 35px;
+    margin-right: 15px;
+    padding: 0 0 3px 3px;
+}
+
+/* Content */
+
+.Product-item {
+    border-radius: 5px;
+}
+
+.content{
+    width: 100vw;
+    height: auto;
+    box-shadow: 0 3px 8px  rgb(0, 0, 0,25%);
+    margin-top: 10px;
+}
+
+.content .Product .card{
+    width: 18rem;
+    overflow: hidden;
+}
+
+.container .row h5{
+    color: #ad795b;
+}
+
+.content .SeeAll .Product_img,
+.content .Product .Product_img{
+    height: 10rem;
+    overflow: hidden;
+}
+
+.content .SP_Item .img_sp{
+    height: 10rem;
+    overflow: hidden;
+}
+
+.Coment .carousel-inner{
+    background-image: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#search-input{
+    display: none;
+}
+
+/* Coment */
+.btnNumberPage button,
+.view-all button{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ad795b;
+    border: 1px solid #ad795b;
+}
+
+.Coment {
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 0 3px 8px rgb(0, 0, 0,25%);
+}
+
+.Content .card:hover,
+.Product .card:hover{
+    box-shadow: 0 3px 8px  rgb(0, 0, 0,25%);
+    cursor: pointer;
+}
+
+.Content .card img,
+.Product .card img{
+    transition: all .1s ease-in-out;
+}
+
+.Content .card img:hover,
+.Product .card img:hover{
+    transform: scale(1.01,1.01);
+    cursor: grab;
+}
+
+.Adver .recipe p{
+    font-size: 17px;
+}
+
+.footer{
+    border-top: 1px solid #f6eee9;
+    box-shadow: 0 4px 10px rgb(0, 0, 0,0.25);
+    background-color: #f6eee9;
+}
+
+.footer .container h5, .footer-header h5{
+    font-weight: bolder;
+    line-height: 30px;
+   
+}
+
+
+
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .header-menu .item, .item-menu-two{
+        display: none;
+    }
+
+    .CT-tablet{
+        display: none;
+    }
+
+    .CT-Mobile img{
+        width: 100%
+    }
+    
+}
+
+@media (max-width:740px) {
+    .header-menu .item, .item-menu-two{
+        display: none;
+    }
+
+    .CT-tablet{
+        display: none;
+    }
+
+    .CT-Mobile img{
+        width: 100%
+    }
+}
+
+/* .reveal{
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  } */

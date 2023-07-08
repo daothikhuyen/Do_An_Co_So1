@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="icon" href="image/logo.jpg">
+<!-- SWEET ALERT -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<title>ĐDessrt Oasis</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
+
+    body{
+        background-image: url('image/anhDN.jpg');
+        
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* display: flex;
+        justify-content: center; */
+    }
+
+    .main{
+        width: 100%;
+        height: 100%;
+    }
+
+    .formdn{
+        margin-top: 200px;
+        border-radius: 10px;
+        color: #9e2d31;
+        font-size: 1.2rem;
+        font-weight: 500;
+        background-color: rgb(141, 108, 89,25%);
+        padding: 5px;
+        
+        
+    }
+
+   
+
+    input[type="email"], input[type="password"]{
+        width: 100%;
+    }
+
+    .nut button, .nut label, .btnDN{
+        background-color: #8d6c59;
+    }
+
+    .btnDN:hover {
+        background-color: rgb(140, 104, 83,0.8);
+    }
+
+    form{
+        width: 25%;
+    }
+
+    @media (min-width: 740px) and (max-width: 1023px) {
+        body{
+            background-image: url('image/anh_mobiphone.jpg');
+            
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        form{
+            width: 100%;
+        }
+    
+    }
+
+    @media (max-width:740px) {
+        body{
+            background-image: url('image/anh_mobiphone.jpg');
+            
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .form{
+            width: 100%;
+            height: 100%;
+        }
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="header d-flex justify-content-center w-100 h-100">
+            <form action="" class="form h-50">
+                <div class="container-fluid h-100 w-100">
+                    <div class="formdn border border-1">
+                        <h3 class="text-center mb-2">Đăng Nhập</h3>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="Name row d-flex mb-4 justify-content-center">
+                                    <div class="col-md-12 col-sm-12 d-flex p-1 mx-2 border border-1 rounded-3" style="border-bottom:1px solid #9e2d31; width: 90%; ">
+                                        <img src="image/user.png" alt="">
+                                        <input class="userDN bg-transparent border-0 w-100 fs-6 ms-1" type="text" name="" id="username" placeholder="Tên đăng nhập">
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 d-flex p-1 mx-2 border border-1 rounded-3 mt-3" style="border-bottom:1px solid #9e2d31; width: 90%; ">
+                                        <img src="image/key2.png" alt="">
+                                        <input class="passDN bg-transparent border-0 fs-6 ms-1" type="password" name="" id="password" placeholder="Password">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 d-flex justify-content-start mt-3 ms-3">
+                                <input type="checkbox" name="" id="">
+                                <label for="" style="font-size: 15px;">Tôi không phải người máy</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="nut text-center mt-4">
+                                    <button class="btnDN btn border border-1 "><a href="index.html"  class="text-decoration-none  text-white w-100" >Đăng Nhập</a></button>
+                                </div>
+                                <div class="dangki my-4">
+                                    <p style="font-size: small;">Bạn chưa có tài khoản đăng kí tại đây <a href="DangKI.html">Đăng Ký</a> </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+<script src="assets/javscript/formDN&DK.js"></script>
+</body>
+</html>

@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="icon" href="image/logo.jpg">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Dessrt Oasis</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="container">
+                <div class="row  d-flex align-items-center justify-content-center">
+                    <div class="col-12 d-flex align-items-center justify-content-between">
+                        <div class="header-logo">
+                            <img src="image/logo.jpg" alt="">
+                        </div>
+                        <div class="header-menu">
+                            <div class="header-ul d-flex">
+                                <div class="item">
+                                    <a href="#">Trang chủ</a>
+                                </div>
+                                <div class="item">
+                                    <a href="shop.html">Cửa hàng</a>
+                                </div>
+                                <div class="item  thongbao position-relative">
+                                    <a href="LienHe2.html">Liên Hệ</a>
+                                </div>
+                                <div class="item">
+                                    <a href="HoTro.html">Hỗ Trợ</a>
+                                </div>
+                                <div class="item-menu-two">
+                                    <a href="#" class="TaiKhoan text-center">Tài khoản <i class="icon-tk fa-solid fa-caret-down"></i></a>
+                                    <div class="item-logout">
+                                        <div class="logout">
+                                            <a href="DangNhap.html">Đăng Xuất</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item cart">
+                                    <a href="GioHang.html" class="cart-icon"><i class="fa-sharp fa-solid fa-cart-shopping fa-sm"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Button trigger modal -->
+                        <div class="mobile-toggler d-lg-none ">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#navbModel">
+                                <i class="bars mx-5 p-2 rounded-2 fa-solid fa-bars"></i>
+                            </a>
+                        </div>
+
+                        <!-- Model -->
+                        <div class="modal fade" id="navbModel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content w-75">
+                                    <div class="modal-header d-flex justify-content-center align-items-center my-0 mx-auto">
+                                        <img src="image/logo.jpg" alt="logo">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                            <i class="text-white fs-4 fa-solid fa-x"></i>
+                                        </button>
+                                    </div>
+        
+                                    <div class="modal-body">
+                                        <div class="modal-line">
+                                            <a href="/"><i class="fa-solid fa-house"></i>Trang Chủ</a>
+                                        </div>
+                                        <div class="modal-line">
+                                            <a href="shop.html"><i class="fa-solid fa-shop"></i>Cửa Hàng</a>
+                                        </div>
+                                        <div class="modal-line">
+                                            <a href="GioHang.html"><i class="fa-sharp fa-solid fa-cart-shopping"></i>Giỏi Hàng</a>
+                                        </div>
+                                        <div class="modal-line">
+                                            <a href="LienHe2.html"><i class="fa-solid fa-address-book"></i> Liên Hệ</a>
+                                        </div>
+                                        <div class="modal-line">
+                                            <a href="HoTro.html"><i class="fa-solid fa-circle-info"></i>Hỗ Trợ</a>
+                                        </div>
+                                        <div class="modal-line">
+                                            <a href="DangNhap.html"><i class="fa-solid fa-right-from-bracket"></i>Đăng Xuất</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide show -->
+        <div id="carouselId" class="carousel slide mt-2" data-bs-ride="carousel">
+            <div class="carousel-inner overflow-hidden" role="listbox">
+                <div class="carousel-item active">
+                    <img src="image/nav01.jpg" class="w-100 d-block" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/banh-anime.jpg" class="w-100 d-block" alt="Second slide">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- End slide show -->
+
+        <!-- Contnet -->
+        <div class="content container-fluid">
+            <div class="row">
+
+                <!-- SP Tieu biểu -->
+                <div class="col-12">
+                    <div class="contnet-type-SP">
+                        <div class="title container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h3 class="my-4" style="color: #ad795b;"><i class="fa-solid fa-fire"></i> Sản Phẩm Bán Chạy</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Product container d-flex align-items-lg-stretch justify-content-center ">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-6 d-flex justify-content-center mt-3">
+                                    <div class="card">
+                                        <div class="Product_img w-100">
+                                            <img src="image/sp-nb-02.jpg" class="card-img-top w-100" alt="...">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">Bánh Macaron Pháp</h5>
+                                            <p class="card-text">
+                                                Bánh Macaron Pháp với hương vị thơm mềm, giòn tan, béo ngậy. Được mệnh danh là "nữ hoàng" của thế giới bánh ngọt.
+                                            </p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 d-flex justify-content-center mt-3">
+                                    <div class="card">
+                                        <div class="Product_img w-100">
+                                            <img src="image/sp-nb-01.jpg" class="card-img-top w-100" alt="...">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">Bánh Sachertorte</h5>
+                                            <p class="card-text">
+                                                Bánh Sachertorte làm từ sô cô la đặc biệt, với vị ngọt ngào và mùi hương hấp dẫn. Bánh này bắt nguồn ở Viena, Áo.
+                                            </p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 d-flex justify-content-center mt-3">
+                                    <div class="card">
+                                        <div class="Product_img w-100">
+                                            <img src="image/sp-nb-03.jpg"  class="card-img-top w-100" alt="...">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">Bánh Gateau St Honore</h5>
+                                            <p class="card-text">
+                                                Bánh Gateau St Honore với đế bánh sửa dụng ngàn lớp để tạo nên hay còn gọi là bánh gato.
+                                            </p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 d-flex justify-content-center mt-3">
+                                    <div class="card">
+                                        <div class="Product_img w-100">
+                                            <img src="image/sp-nb-04.jpg" class="card-img-top w-100" alt="...">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">Bánh Black forest</h5>
+                                            <p class="card-text">
+                                                Bánh Black forest là một loại bánh kem và sô cô la với nhân anh đào phong phú dựa trên một món tráng miệng của Đức.
+                                            </p>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 my-4">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 d-flex align-items-center justify-content-between my-2">
+                                <div class="Gioi-Y">
+                                    <h3 style="color: #ad795b;"><i class="fa-solid fa-clock"></i> Sản Phẩm Khuyến Mãi</h3>
+                                </div>
+                                <div class="mobile-icon d-block">
+                                    <div class="Product-choose d-flex align-items-center justify-content-end">
+                                        <input type="text" name="" id="search-input" placeholder="Tìm kiếm" class="border border-1 p-1 me-2">
+                                        <button class="btn-seacrch" ><i class="fa-solid fa-magnifying-glass fa-xs"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Content col-12" id="content1">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6 d-flex justify-content-center mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="image/banh-tao-My.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Bánh Táo Mỹ</h5>
+                                        <p class="card-text">Bên ngoài được nướng nên có vỏ bánh có màu vàng nâu, thơm mùi bơ và giòn tan.</p>
+                                        <span>😍😍😍😒😒 <small>Đã bán: 11,2 k</small></span>
+                                        <div class="d-flex justify-content-end">
+                                            <a href="#" class="btn btn-danger">88.000 <small>đ</small></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 d-flex justify-content-center mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="image/banh-Donut.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title fw-bold">Bánh Donut Mỹ</h5>
+                                      <p class="card-text"> Bề mặt bánh thường được phủ lên một lớp socola, trang trí thêm kem, dừa sấy, cốm. </p>
+                                      <span>😍😍😍😍😒 <small>Đã bán: 24,2 k</small></span>
+                                        <div class="d-flex justify-content-end">
+                                            <a href="#" class="btn btn-danger">10.000 <small>đ</small></a>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 d-flex justify-content-center mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="image/Banh-Bánh Tiramisu Ý.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title fw-bold">Bánh Tiramisu Ý</h5>
+                                      <p class="card-text">Những lớp bánh quy xen kẽ với các lớp kem phô mai, bên ngoài được phủ bột ca cao hoặc cà phê.</p>
+                                      <span>😍😍😍😍😒 <small>Đã bán: 3,2 k</small></span>
+                                        <div class="d-flex justify-content-end">
+                                            <a href="#" class="btn btn-danger">55.500 <small>đ</small></a>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 d-flex justify-content-center mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="image/banh-mochi.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title fw-bold">Bánh Mochi Nhật Bản</h5>
+                                      <p class="card-text">Đây là loại bánh nhân ngọt, được làm từ gạo nếp dẻo thơm, vỏ bánh mềm dai. Bánh có nhiều vị tuyệt vời</p>
+                                      <span>😍😍😍😍😍 <small>Đã bán: 100,2 k</small></span>
+                                        <div class="d-flex justify-content-end">
+                                            <a href="#" class="btn btn-danger">24.600 <small>đ</small></a>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 d-flex justify-content-center mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="image/banh-Bánh Black Forest Đức.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title fw-bold">Bánh Black Forest Đức</h5>
+                                      <p class="card-text">Được tạo từ nhiều lớp cốt bánh chocolate phủ kem, rượu anh đào được phủ lớp chocolate bào mỏng.</p>
+                                      <span>😍😍😍😍😒 <small>Đã bán: 4,2 k</small></span>
+                                        <div class="d-flex justify-content-end">
+                                            <a href="#" class="btn btn-danger">199.000 <small>đ</small></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 d-flex justify-content-center mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="image/banh- Limburg Pie Hà Lan.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title fw-bold">Bánh Limburg Pie Hà Lan</h5>
+                                      <p class="card-text">Với phần nhân bánh là trái cây thanh mát và sự mềm mại của cốt bánh, hương thơm của sữa.</p>
+                                      <span>😍😍😍😒😒 <small>Đã bán: 21,2 k</small></span>
+                                        <div class="d-flex justify-content-end">
+                                            <a href="#" class="btn btn-danger">15.000 <small>đ</small></a>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 d-flex justify-content-center mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="image/banh-Pavlova Úc.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title fw-bold">Bánh Pavlova Úc</h5>
+                                      <p class="card-text">Lớp vỏ bánh được phủ đầy kem và trái cây, vậy nên khi nhìn vào sẽ thấy vị ngọt béo, mát lạnh tràn đầy.</p>
+                                      <span>😍😍😒😒😒 <small>Đã bán: 10,2 k</small></span>
+                                        <div class="d-flex justify-content-end">
+                                            <a href="#" class="btn btn-danger">200.000 <small>đ</small></a>
+                                        </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 d-flex justify-content-center mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="image/banh-Cheesecake New York.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title fw-bold">Bánh Cheesecake New York</h5>
+                                      <p class="card-text">Bánh có cấu tạo dạng đặc, mềm mịn với hương vị của đậm đà, ngọt ngào là sự kết hợp hài hoà với các thành phần</p>
+                                      <span>😍😍😍😒😒 <small>Đã bán: 11,2 k</small></span>
+                                      <div class="d-flex justify-content-end">
+                                          <a href="#" class="btn btn-danger">1000.000 <small>đ</small></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="view-all container">
+                        <div class="row">
+                            <div class="btn-view col-12 d-flex align-items-center justify-content-center">
+                                <button type="button"  class="btnSeeAll btn btn-dark">Xem Tất Cả</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Xem tất cả -->
+                    <div class="SeeAll container mt-4" id="SP-See-all">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6 d-flex justify-content-center mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <div class="Product_img">
+                                        <img src="image/Banh-pho-mai-chanh-day.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                      <h5 class="card-title fw-bold">Bánh phô mai chanh dây</h5>
+                                      <p class="card-text">Bánh làm từ bông lan vani, lớp kem mousse gồm phô mai (cream cheese), kem tươi whipping, ngon tuyệt.</p>
+                                      <span>😍😍😍😍😍 <small>Đã bán: 21,2 k</small></span>
+                                      <div class="d-flex justify-content-end">
+                                          <a href="#" class="btn btn-danger">200.000 <small>đ</small></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 d-flex justify-content-center mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <div class="Product_img">
+                                        <img src="image/Banh-Madeleines.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                      <h5 class="card-title fw-bold"> Bánh Madeleines</h5>
+                                      <p class="card-text">Bánh có nguồn gốc từ nước Pháp và gọi bánh sò, làm từ bơ, sữa và đường sau đó nướng nhẹ trong lò nướng.</p>
+                                      <span>😍😍😍😒😒 <small>Đã bán: 11,2 k</small></span>
+                                      <div class="d-flex justify-content-end">
+                                          <a href="#" class="btn btn-danger">35.000 <small>đ</small></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 d-flex justify-content-center mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <div class="Product_img">
+                                        <img src="image/Banh-Swedish-Princess.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                      <h5 class="card-title fw-bold">Bánh Swedish Princess</h5>
+                                      <p class="card-text">Chiếc bánh này vốn được sinh ra để phục vụ những bữa tiệc hoàng gia.Với Hương vị lôi cuốn đậm đà</p>
+                                      <span>😍😍😍😒😒 <small>Đã bán: 11,2 k</small></span>
+                                      <div class="d-flex justify-content-end">
+                                          <a href="#" class="btn btn-danger">1000.000 <small>đ</small></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 d-flex justify-content-center mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <div class="Product_img">
+                                        <img src="image/Banh-Red-Velvet.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                      <h5 class="card-title fw-bold">Bánh Red Velvet</h5>
+                                      <p class="card-text">Bánh có cấu tạo dạng đặc, mềm mịn với hương vị của đậm đà, ngọt ngào là sự kết hợp hài hoà với các thành phần</p>
+                                      <span>😍😍😍😍😒 <small>Đã bán: 8,2 k</small></span>
+                                      <div class="d-flex justify-content-end">
+                                          <a href="#" class="btn btn-danger">205.000 <small>đ</small></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 d-flex justify-content-center mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <div class="Product_img">
+                                        <img src="image/banh_cay-khuc.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Bánh khúc cây</h5>
+                                        <p class="card-text">Bánh khúc cây được trang trí công phu, cuộn tròn và đầy ắp này phủ một lớp kem bơ socola trông giống như vỏ cây.</p>
+                                        <span>😍😍😍😍😍 <small>Đã bán: 11,2 k</small></span>
+                                        <div class="d-flex justify-content-end">
+                                            <a href="#" class="btn btn-danger">98.000 <small>đ</small></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 d-flex justify-content-center mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <div class="Product_img">
+                                        <img src="image/banh_Kladdkaka.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title fw-bold">Bánh Kladdkaka</h5>
+                                        <p class="card-text">Loại bánh ngọt ngon nhất thế giới với sự kết hợp sáng tạo giữa trứng, cacao (hoặc socola),bơ,đường và bột mì. </p>
+                                        <span>😍😍😍😍😍 <small>Đã bán: 4,2 k</small></span>
+                                        <div class="d-flex justify-content-end">
+                                            <a href="#" class="btn btn-danger">250.990 <small>đ</small></a>
+                                        </div>
+                                    </div>
+                                    </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 d-flex justify-content-center mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <div class="Product_img">
+                                        <img src="https://daylambanh.edu.vn/wp-content/uploads/2021/06/cach-lam-banh-bong-lan-pho-mai-nhat-ban.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                    <h5 class="card-title fw-bold">Bánh phô mai</h5>
+                                    <p class="card-text">Là một trong những loại bánh ngọt ngon nhất thế giới.Với lớp vỏ trồng mềm mịn và hương vị thơm mùi sữa.</p>
+                                    <span>😍😍😍😍😒 <small>Đã bán: 48,2 k</small></span>
+                                        <div class="d-flex justify-content-end">
+                                            <a href="#" class="btn btn-danger">50.591 <small>đ</small></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 d-flex justify-content-center mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <div class="Product_img">
+                                        <img src="image/banh_Lamington.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                    <h5 class="card-title fw-bold">Bánh Lamington</h5>
+                                    <p class="card-text">Bánh này được tạo ra một cách tình cờ và sự vô tình của chủ chiếc bánh rơi vào socola nóng chảy.</p>
+                                    <span>😍😍😍😍😍 <small>Đã bán: 100,2 k</small></span>
+                                        <div class="d-flex justify-content-end">
+                                            <a href="#" class="btn btn-danger">240.600 <small>đ</small></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 d-flex justify-content-center mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <div class="Product_img">
+                                        <img src="image/banh_Ciambella.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                    <h5 class="card-title fw-bold">Bánh Mochi Nhật Bản</h5>
+                                    <p class="card-text">Ciambella là một loại bánh ngọt ngon nhất thế giới có hình nhẫn truyền thống của Ý có hương vị vỏ chanh.</p>
+                                    <span>😍😍😍😍😍 <small>Đã bán: 100,2 k</small></span>
+                                        <div class="d-flex justify-content-end">
+                                            <a href="#" class="btn btn-danger">245.600 <small>đ</small></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 d-flex justify-content-center mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <div class="Product_img">
+                                        <img src="image/banh-mochi.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                    <h5 class="card-title fw-bold">Bánh Mochi Nhật Bản</h5>
+                                    <p class="card-text">Đây là loại bánh nhân ngọt, được làm từ gạo nếp dẻo thơm, vỏ bánh mềm dai. Bánh có nhiều vị tuyệt vời</p>
+                                    <span>😍😍😍😍😍 <small>Đã bán: 100,2 k</small></span>
+                                        <div class="d-flex justify-content-end">
+                                            <a href="#" class="btn btn-danger">24.600 <small>đ</small></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 d-flex justify-content-center mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <div class="Product_img">
+                                        <img src="image/banh_Red Velvet.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                    <h5 class="card-title fw-bold">Bánh Red Velvet</h5>
+                                    <p class="card-text">Bánh Red Velvet thường được phủ thêm lớp kem bơ roux kiểu Pháp và kem bơ được mọi người thích thú.</p>
+                                    <span>😍😍😍😍😍 <small>Đã bán: 100,2 k</small></span>
+                                        <div class="d-flex justify-content-end">
+                                            <a href="#" class="btn btn-danger">24.600 <small>đ</small></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 d-flex justify-content-center mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <div class="Product_img">
+                                        <img src="image/banh_Krémes.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                    <h5 class="card-title fw-bold">Bánh MKrémes</h5>
+                                    <p class="card-text">Loại bánh ngọt ngon nhất thế giới. Với bề ngoài được phủ một lớp bột mỏng giúp giảng đi vị ngáy trong bánh.</p>
+                                    <span>😍😍😍😍😒 <small>Đã bán: 100,2 k</small></span>
+                                        <div class="d-flex justify-content-end">
+                                            <a href="#" class="btn btn-danger">160.600 <small>đ</small></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 d-flex justify-content-center mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <div class="Product_img">
+                                        <img src="image/banh_Sernik.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                    <h5 class="card-title fw-bold">Bánh Sernik</h5>
+                                    <p class="card-text">Đây là loại bánh nhân ngọt, được làm từ gạo nếp dẻo thơm, vỏ bánh mềm dai. Bánh có nhiều vị tuyệt vời</p>
+                                    <span>😍😍😍😍😍 <small>Đã bán: 100,2 k</small></span>
+                                        <div class="d-flex justify-content-end">
+                                            <a href="#" class="btn btn-danger">24.600 <small>đ</small></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 d-flex justify-content-center mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <div class="Product_img">
+                                        <img src="image/banh_Medovik.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                    <h5 class="card-title fw-bold">Bánh Medovik</h5>
+                                    <p class="card-text">Là bánh mật ong nhiều lớp bao gồm những miếng xốp và được tẩm mật ong và được phủ một lớp kem mỏng</p>
+                                    <span>😍😍😍😍😒 <small>Đã bán: 180,2 k</small></span>
+                                        <div class="d-flex justify-content-end">
+                                            <a href="#" class="btn btn-danger">24.600 <small>đ</small></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 d-flex justify-content-center mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <div class="Product_img">
+                                        <img src="image/banh_chocolatelavacake.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                    <h5 class="card-title fw-bold">Bánh chocolate lava cake</h5>
+                                    <p class="card-text">Với lớp vỏ phủ màu chocolate tuyệt vời và bên trong là lớp nhân mĩ vị đã thu hút nhiều người</p>
+                                    <span>😍😍😍😍😍 <small>Đã bán: 400,2 k</small></span>
+                                        <div class="d-flex justify-content-end">
+                                            <a href="#" class="btn btn-danger">24.600 <small>đ</small></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 d-flex justify-content-center mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <div class="Product_img">
+                                        <img src="image/banh_PoundCake.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                    <h5 class="card-title fw-bold">Bánh Pound Cake</h5>
+                                    <p class="card-text">Thành phần bánh gồm một pound cho mỗi thành phần sau: bột mì, bơ, đường và trứng</p>
+                                    <span>😍😍😍😍😍 <small>Đã bán: 90,2 k</small></span>
+                                        <div class="d-flex justify-content-end">
+                                            <a href="#" class="btn btn-danger">24.600 <small>đ</small></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 d-flex justify-content-center mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <div class="Product_img">
+                                        <img src="image/banh_Cassata.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                    <h5 class="card-title fw-bold">Bánh Cassata</h5>
+                                    <p class="card-text">Bánh bông lan đẫm mùi rượu liqueur xếp lớp với phô mai ricotta ngọt, mứt trái cây thu hút người dùng.</p>
+                                    <span>😍😍😍😍😍 <small>Đã bán: 10,2 k</small></span>
+                                        <div class="d-flex justify-content-end">
+                                            <a href="#" class="btn btn-danger">240.600 <small>đ</small></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 d-flex justify-content-center mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <div class="Product_img">
+                                        <img src="image/banh_phomat.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                    <h5 class="card-title fw-bold">Bánh pho mát </h5>
+                                    <p class="card-text">Bánh pho mát kiểu New York nổi bật với phần kết cấu nặng và đặc, hương vị đậm đà với màu sắc đẹp.</p>
+                                    <span>😍😍😍😍😍 <small>Đã bán: 100,2 k</small></span>
+                                        <div class="d-flex justify-content-end">
+                                            <a href="#" class="btn btn-danger">165.600 <small>đ</small></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 d-flex justify-content-center mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <div class="Product_img">
+                                        <img src="image/banh_SchwarzwälderKirschtorte.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                    <h5 class="card-title fw-bold">Bánh Schwarzwälder Kirschtorte</h5>
+                                    <p class="card-text">Sử dụng rượu mạnh để tạo lớp socola hoặc để tạo hương vị nhẹ cho phần kem, socola bào và quả anh đào.
+                                    </p>
+                                    <span>😍😍😍😍😍 <small>Đã bán: 100,2 k</small></span>
+                                        <div class="d-flex justify-content-end">
+                                            <a href="#" class="btn btn-danger">500.600 <small>đ</small></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 d-flex justify-content-center mb-3">
+                                <div class="card" style="width: 18rem;">
+                                    <div class="Product_img">
+                                        <img src="image/banh_Sachertorte.jpg" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                    <h5 class="card-title fw-bold">Bánh Sachertorte</h5>
+                                    <p class="card-text">
+                                        Nguyên bản là một trong những loại bánh ngọt ngon nhất thế giới của Áo và chất lượng cao với phần socola.
+                                    </p>
+                                    <span>😍😍😍😍😍 <small>Đã bán: 100,2 k</small></span>
+                                        <div class="d-flex justify-content-end">
+                                            <a href="#" class="btn btn-danger">360.600 <small>đ</small></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+
+                <!-- Quang Cáo -->
+                <div class="Adver container-fluid border border-1 mt-3">
+                    <div class="row">
+                        <div class="col-12 mt-4">
+                            <div class="row">
+                                <div class="col-xl-6 col-md-12 col-xs-12 d-flex justify-content-center align-items-center">
+                                    <div class="recipe w-75">
+                                        <h4 class="fw-bolder" style="color: #ad795b;">Cách Làm Bánh Dâu Tây Cách Đơn Giản</h4>
+                                        <p class="">&nbsp; &nbsp; &nbsp; &nbsp; Đầu tiên nướng một bạt bánh cuộn, sau đó cắt thành 2 – 3 phần. 
+                                            Thế là ta đã có ngay 3 bạt bánh để làm bánh nhiều tầng rồi.
+                                            Nếu muốn làm bánh hình tròn, chỉ cần cắt một miếng bìa tròn, 
+                                            áp lên miếng bánh rồi cắt theo là được.
+                                            Ưu điểm của cách này là làm rất nhanh, bánh cuộn lại thường dễ nướng, rủi ro hỏng và xẹp thấp.
+                                            Sau khi nướng xong không phải lo xẻ bạt bánh sao cho đều.
+                                            Nhất là với những bạt bánh nhẹ như ga-tô Nhật Bản thì dùng cách này vô cùng tiện. 
+                                            Và bạn thậm chí có thể làm một chiếc bánh nhiều tầng với kích thước rất lớn, như 30 x 20 cm chẳng hạn (chỉ cần nướng nhiều bạt bánh cuộn là được mà).
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-md-12 col-xs-12 d-flex justify-content-center align-items-cente">
+                                    <div class="d-flex justify-content-center align-items-cente">
+                                        <img class="w-75 border rounded-4" src="image/banh-dau.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="CT-tablet col-12 mt-4">
+                            <div class="row">
+                                <div class="col-xl-6 col-md-12 col-xs-12 d-flex justify-content-center align-items-cente">
+                                    <div class="d-flex justify-content-center align-items-cente">
+                                        <img class="w-75 border rounded-4" src="image/list-banh.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-md-12 col-xs-12 d-flex justify-content-center align-items-center">
+                                    <div class="recipe w-75">
+                                        <h4 class="fw-bolder" style="color: #ad795b;">Vì Sao Nên Mua Bánh Tại Website của Chúng Tôi?</h4>
+                                        <p class="">&nbsp; &nbsp; &nbsp; &nbsp;  Để trả lười câu hỏi này chúng tôi xin phép được nếu một số ưu điểm của website online của shop chúng tôi.
+                                            Với mong muốn đêm lại trai nghiệm tuyệt vời cho khách hàng chúng tôi đã mười đến rất nhiều chuyên gia trong lĩnh vực 
+                                            <i>"Công Nghệ"</i> để giúp shop chúng tôi hoàn thiệt trang web mọt cách tối đa, giúp cho các bạn dễ dàng tiếp cận với các loại bánh đắt giá trên thị trường.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="CT-Mobile col-12 my-4">
+                            <div class="row">
+                                <div class="col-xl-6 col-md-12 col-xs-12 d-flex justify-content-center align-items-center">
+                                    <div class="recipe w-75">
+                                        <h4 class="fw-bolder" style="color: #ad795b;">Căn Bếp Của shop các Bạn Như Thế Nào?</h4>
+                                        <p class="">&nbsp; &nbsp; &nbsp; &nbsp;  Với mong muốn đêm lại cho các bạn khách hàng một trải nghiệm tuyệt vời vì thế shop chúng tôi đã bỏ ra số tiền khá lớn đầu tư
+                                            vào dụng cụng làm bánh. Shop chúng tôi có đày đủ tất cả các loại dụng cụ từ nướng bánh đến đập bánh đều là các sản phẩm đạt chất lượng cao trên thế giới.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-md-12 col-xs-12 d-flex justify-content-center align-items-cente">
+                                    <div class="d-flex justify-content-center align-items-cente">
+                                        <img class="w-75 border rounded-4" src="image/can-bep.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer-Coment -->
+        <div class="Coment container border border-1 mt-2 mb-2">
+            <div class="row">
+                <div class="coment-left col-md-6 col-sm-6">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner p-1 m-2">
+                            <div class="carousel-item active">
+                                <img src="image/binh-luan2.jpg" class="d-block w-100" alt="first-Picture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image/binh-luan3.1.jpg" class="d-block w-100" alt="Second-Picture">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="image/binhluan1.jpg" class="d-block w-100" alt="Thrid-Picture">
+                            </div>
+                        </div>
+                      </div>
+                </div>
+
+                <!-- Coment -->
+                <div class="coment-right col-md-6 col-sm-6 px-5 d-flex justify-content-center align-items-center">
+                    <div class="coment-item w-100">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Địa Chỉ Email</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Nội Dung Bình Luận</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer mt-4">
+            <div class="container">
+                <div class="footer-header container-fluid">
+                    <div class="row">
+                        <div class="col-xl-4 col-md-6 col-sm-12 py-3 ">
+                            <div class="row d-flex align-items-center justify-content-center">
+                                <div class="col-6">
+                                    <img class="w-100" src="image/logo.jpg" alt="">
+                                </div>
+                                <div class="col-6 " style="line-height: 30px;">
+                                    <h5 class="ps-5">Hỗ trợ</h5>
+                                    <p><i class="fa-solid fa-car pe-2" style="color:#ad795b;"></i> Giao Hàng Tận Nơi <br>
+                                        <i class="fa-solid fa-headset pe-2" style="color:#ad795b;"></i> Hỗ Trợ Đặt Hàng <br>
+                                        <i class="fa-solid fa-credit-card pe-2" style="color:#ad795b;"></i>Thanh Toán Đa Dạng<br>
+                                        <i class="fa-solid fa-rotate-left pe-2" style="color:#ad795b;"></i> Hoàn Trả Sản Phẩm <br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 col-md-6 col-sm-12">
+                            <div class="row justify-content-between">
+                                <div class="col-md-6 col-sm-12 py-3 d-flex align-items-center justify-content-center" >
+                                    <div class="cham_soc_Kh">
+                                        <h5 class=" text-center" style="line-height: 30px;">Chăm Sóc Khách Hàng</h5>
+                                        <img class="border border-1 rounded-5" src="image/Cham_soc_KH.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12 pt-3 d-flex justify-content-center" style="line-height: 30px;">
+                                    <div class="LK_Nhanh">
+                                        <h5 class="ms-5"> Thông Tin </h5>
+                                        <p>
+                                            <i class="fa-solid fa-magnifying-glass pe-2" style="color:#ad795b;"></i> Giới thiệu website online
+                                            <br> <i class="fa-solid fa-cart-shopping pe-2" style="color:#ad795b;"></i> Hệ Thống cửa hàng trên toàn quốc
+                                            <br> <i class="fa-solid fa-cake-candles pe-2" style="color:#ad795b;"></i> Sản phẩm của shop trên shop online
+                                            <br> <i class="fa-solid fa-newspaper pe-2" style="color:#ad795b;"></i> Tin tức và sự kiện của shop qua website
+                                            
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-local mt-3 text-center">
+                    <h5 style="color:#ad795b;">CƠ SỞ SẢN SẢN XUẤT PHÚ MỸ</h5>
+                    <h6>Trụ Sở: Công Nghệ Thông Và Truyền Thông Việt Hàn</h6>
+                    <h6>Hotline: 0834006551</h6>
+                    <h6>Email: khuyendt.22itb@vku.udn.vn</h6>
+                    <h6>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; minhht.22itb@vku.udn.vn</h6>
+                </div>
+                <br><hr class="w-100">
+                <div class="footer-fot text-center pb-3">
+                    <i class="fa-solid fa-cake-candles fa-xl" style="color: #ad795b;"></i>&nbsp;  Chào Mừng Bạn Đến Với Chúng Tôi &nbsp; <i class="fa-solid fa-cake-candles fa-xl" style="color: #ad795b;"></i>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/javscript/script.js"></script>
+<script src="assets/javscript/scriptAction.js"></script>
+</body>
+</html>

@@ -1,3 +1,4 @@
+
 .header_content{
     height: 300px;
     overflow: hidden;
@@ -87,45 +88,9 @@
     width: 100%;
 }
 
-.navigation_content .SP_Banh .card .Product_img{
-    height: 9rem;
+.Page1 .card .card-img{
+    height: 8rem;
     overflow: hidden;
 }
 
-.navigation_content .SP_Banh .card:hover{
-    box-shadow: 0 3px 8px  rgb(0, 0, 0,25%);
-    cursor: pointer;
-    transform: scale(1.01,1.01);
-    cursor: grab;
-}
-
-.navigation_content .SP_Banh .card .Product_img:hover img{
-    transform: scale(1.01,1.01);
-    cursor: grab;
-}
-
-.navigation_content .SP_Banh .Page2{
-    display: none;
-}
-
-.header_content .wellcome h1{
-    letter-spacing: 2px;
-    text-shadow: 1px 1px #ad795b, 2px 2px #ad795b, 3px 3px #ad795b, 4px 4px #ad795b, 5px 5px #ad795b, 6px 6px #ad795b;
-    font: bold 52px status-bar;
-}
-
-
-@media (min-width: 740px) and (max-width: 1023px) {
-   .navigation_content .row .menu{
-        width: 100%;
-   }
-    
-    
-}
-
-@media (max-width:740px) {
-    .navigation_content .row .menu{
-        width: 100%;
-   }
-}
 

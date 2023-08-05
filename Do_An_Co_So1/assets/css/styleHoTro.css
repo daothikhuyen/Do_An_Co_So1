@@ -223,6 +223,10 @@ h3,
 .footer .footer-local h6{
     font-size: 15px;
 }
+
+.rounded-3 {
+    border-radius: 1.3rem!important;
+}
 /* End Footer */
 
 
@@ -254,7 +258,7 @@ h3,
         width: 100%
     }
 }
-
+/* 
 .reveal{
     position: relative;
     transform: translateX(-150px);
@@ -265,4 +269,4 @@ h3,
   .reveal.active{
     transform: translateY(0);
     opacity: 1;
-  }
+  } */

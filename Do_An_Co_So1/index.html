@@ -9,7 +9,6 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"> -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="stylesheet" href="assets/css/style.css">
 <title>Dessrt Oasis</title>
@@ -37,56 +36,53 @@
                                 <div class="item">
                                     <a href="HoTro.html">Hỗ Trợ</a>
                                 </div>
-                                <div class="item-menu-two">
-                                    <a href="#" class="TaiKhoan text-center">Tài khoản <i class="icon-tk fa-solid fa-caret-down"></i></a>
-                                    <div class="item-logout">
-                                        <div class="logout">
-                                            <a href="DangNhap.html">Đăng Xuất</a>
-                                        </div>
-                                    </div>
-                                </div>
                                 <div class="item cart">
-                                    <a href="GioHang.html" class="cart-icon"><i class="fa-sharp fa-solid fa-cart-shopping fa-sm"></i></a>
+                                    <a href="" class="cart-icon"  data-bs-toggle="modal" data-bs-target="#modalId"><i class="fa-sharp fa-solid fa-cart-shopping fa-sm"></i></a>
+                                </div>
+                                <div class="item user ">
+                                    <a href="formDN&DK.html" class="user-icon"><i class="fa-solid fa-user fa-sm"></i></a>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Button trigger modal -->
                         <div class="mobile-toggler d-lg-none ">
+                            <a href="" class="cart-icon"  data-bs-toggle="modal" data-bs-target="#modalId"><i class="fa-sharp fa-solid fa-cart-shopping fa-lg " style="color: #c39d86;"></i></a>
+                           
                             <a href="#" data-bs-toggle="modal" data-bs-target="#navbModel">
                                 <i class="bars mx-5 p-2 rounded-2 fa-solid fa-bars"></i>
                             </a>
                         </div>
 
                         <!-- Model -->
-                        <div class="modal fade" id="navbModel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content w-75">
-                                    <div class="modal-header d-flex justify-content-center align-items-center my-0 mx-auto">
+                        <div class="modal fade menu" id="navbModel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="menu-dialog modal-dialog">
+                                <div class="menu_content modal-content w-75">
+                                    <div class="menu-header modal-header d-flex justify-content-center align-items-center my-0 mx-auto">
                                         <img src="image/logo.jpg" alt="logo">
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                                             <i class="text-white fs-4 fa-solid fa-x"></i>
                                         </button>
                                     </div>
         
-                                    <div class="modal-body">
-                                        <div class="modal-line">
+                                    <div class="menu-body modal-body">
+                                        <div class="menu-line modal-line">
                                             <a href="/"><i class="fa-solid fa-house"></i>Trang Chủ</a>
                                         </div>
-                                        <div class="modal-line">
+                                        <div class="menu-line modal-line">
                                             <a href="shop.html"><i class="fa-solid fa-shop"></i>Cửa Hàng</a>
                                         </div>
-                                        <div class="modal-line">
-                                            <a href="GioHang.html"><i class="fa-sharp fa-solid fa-cart-shopping"></i>Giỏi Hàng</a>
-                                        </div>
-                                        <div class="modal-line">
+                                        <!-- <div class="menu-line modal-line">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#modalId"><i class="fa-sharp fa-solid fa-cart-shopping"></i>Giỏi Hàng</a>
+                                        </div> -->
+                                        <div class="menu-line modal-line">
                                             <a href="LienHe2.html"><i class="fa-solid fa-address-book"></i> Liên Hệ</a>
                                         </div>
-                                        <div class="modal-line">
+                                        <div class="menu-line modal-line">
                                             <a href="HoTro.html"><i class="fa-solid fa-circle-info"></i>Hỗ Trợ</a>
                                         </div>
-                                        <div class="modal-line">
-                                            <a href="DangNhap.html"><i class="fa-solid fa-right-from-bracket"></i>Đăng Xuất</a>
+                                        <div class="menu-line modal-line">
+                                            <a href="formDN&DK.html"><i class="fa-solid fa-right-from-bracket"></i>Đăng Xuất</a>
                                         </div>
                                     </div>
                                 </div>
@@ -96,6 +92,36 @@
                 </div>
             </div>
         </div>
+
+        <!--Interface Cart -->
+        <div class="modal fade cart" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+            <div class="cart-dialog modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                <div class="cart-content modal-content w-100">
+                    <div class="cart-header modal-header">
+                        <h5 class="modal-title" id="modalTitleId">Giỏ Hàng</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="cart-body modal-body container-fluid">
+                        <!-- <div class="product-cart d-flex justify-content-around align-items-center">
+                            <span class="cart-img" style="width: 60px;">
+                                <a href="" class="img-zoom w-100 ">
+                                    <img class="w-100" src="image/banh-Bánh Black Forest Đức.jpg" alt="">
+                                </a>
+                            </span>
+                            <span>
+                                <b>Bánh Black Forest Đức </b>
+                            </span>
+                            <span>
+                                <b>1</b>
+                            </span>
+                            <span><b>230.000 đ</b></span>
+                            <span class="border-1 p-2 " ><i class="fa-solid fa-trash-can"></i></span>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end cart -->
 
         <!-- Slide show -->
         <div id="carouselId" class="carousel slide mt-2" data-bs-ride="carousel">
@@ -133,8 +159,8 @@
                             </div>
                         </div>
                         <div class="Product container d-flex align-items-lg-stretch justify-content-center ">
-                            <div class="row">
-                                <div class="col-md-3 col-sm-6 d-flex justify-content-center mt-3">
+                            <div class="productRow row">
+                                <!-- <div class="col-md-3 col-sm-6 d-flex justify-content-center mt-3">
                                     <div class="card">
                                         <div class="Product_img w-100">
                                             <img src="image/sp-nb-02.jpg" class="card-img-top w-100" alt="...">
@@ -189,7 +215,7 @@
                                             
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -215,111 +241,22 @@
 
                 <div class="Content col-12" id="content1">
                     <div class="container">
-                        <div class="row">
-                            <div class="col-md-3 col-sm-6 d-flex justify-content-center mb-3">
+                        <div class="ContentRow row">
+                            <!-- <div class="col-md-3 col-sm-6 d-flex justify-content-center mb-3">
                                 <div class="card" style="width: 18rem;">
                                     <img src="image/banh-tao-My.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
+                                    <div class="card-body text-center">
                                         <h5 class="card-title fw-bold">Bánh Táo Mỹ</h5>
-                                        <p class="card-text">Bên ngoài được nướng nên có vỏ bánh có màu vàng nâu, thơm mùi bơ và giòn tan.</p>
-                                        <span>😍😍😍😒😒 <small>Đã bán: 11,2 k</small></span>
-                                        <div class="d-flex justify-content-end">
-                                            <a href="#" class="btn btn-danger">88.000 <small>đ</small></a>
-                                        </div>
+                                        <span>500.000 VND</span>
+                                        
+                                    </div>
+                                    <div class="btn d-inline-block border-0" >
+                                        <button type="button" class="btn text-white" style="background-color: #ad795b;"> Mua Hàng Ngay</button>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 d-flex justify-content-center mb-3">
-                                <div class="card" style="width: 18rem;">
-                                    <img src="image/banh-Donut.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                      <h5 class="card-title fw-bold">Bánh Donut Mỹ</h5>
-                                      <p class="card-text"> Bề mặt bánh thường được phủ lên một lớp socola, trang trí thêm kem, dừa sấy, cốm. </p>
-                                      <span>😍😍😍😍😒 <small>Đã bán: 24,2 k</small></span>
-                                        <div class="d-flex justify-content-end">
-                                            <a href="#" class="btn btn-danger">10.000 <small>đ</small></a>
-                                        </div>
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 d-flex justify-content-center mb-3">
-                                <div class="card" style="width: 18rem;">
-                                    <img src="image/Banh-Bánh Tiramisu Ý.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                      <h5 class="card-title fw-bold">Bánh Tiramisu Ý</h5>
-                                      <p class="card-text">Những lớp bánh quy xen kẽ với các lớp kem phô mai, bên ngoài được phủ bột ca cao hoặc cà phê.</p>
-                                      <span>😍😍😍😍😒 <small>Đã bán: 3,2 k</small></span>
-                                        <div class="d-flex justify-content-end">
-                                            <a href="#" class="btn btn-danger">55.500 <small>đ</small></a>
-                                        </div>
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 d-flex justify-content-center mb-3">
-                                <div class="card" style="width: 18rem;">
-                                    <img src="image/banh-mochi.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                      <h5 class="card-title fw-bold">Bánh Mochi Nhật Bản</h5>
-                                      <p class="card-text">Đây là loại bánh nhân ngọt, được làm từ gạo nếp dẻo thơm, vỏ bánh mềm dai. Bánh có nhiều vị tuyệt vời</p>
-                                      <span>😍😍😍😍😍 <small>Đã bán: 100,2 k</small></span>
-                                        <div class="d-flex justify-content-end">
-                                            <a href="#" class="btn btn-danger">24.600 <small>đ</small></a>
-                                        </div>
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 d-flex justify-content-center mb-3">
-                                <div class="card" style="width: 18rem;">
-                                    <img src="image/banh-Bánh Black Forest Đức.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                      <h5 class="card-title fw-bold">Bánh Black Forest Đức</h5>
-                                      <p class="card-text">Được tạo từ nhiều lớp cốt bánh chocolate phủ kem, rượu anh đào được phủ lớp chocolate bào mỏng.</p>
-                                      <span>😍😍😍😍😒 <small>Đã bán: 4,2 k</small></span>
-                                        <div class="d-flex justify-content-end">
-                                            <a href="#" class="btn btn-danger">199.000 <small>đ</small></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 d-flex justify-content-center mb-3">
-                                <div class="card" style="width: 18rem;">
-                                    <img src="image/banh- Limburg Pie Hà Lan.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                      <h5 class="card-title fw-bold">Bánh Limburg Pie Hà Lan</h5>
-                                      <p class="card-text">Với phần nhân bánh là trái cây thanh mát và sự mềm mại của cốt bánh, hương thơm của sữa.</p>
-                                      <span>😍😍😍😒😒 <small>Đã bán: 21,2 k</small></span>
-                                        <div class="d-flex justify-content-end">
-                                            <a href="#" class="btn btn-danger">15.000 <small>đ</small></a>
-                                        </div>
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 d-flex justify-content-center mb-3">
-                                <div class="card" style="width: 18rem;">
-                                    <img src="image/banh-Pavlova Úc.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                      <h5 class="card-title fw-bold">Bánh Pavlova Úc</h5>
-                                      <p class="card-text">Lớp vỏ bánh được phủ đầy kem và trái cây, vậy nên khi nhìn vào sẽ thấy vị ngọt béo, mát lạnh tràn đầy.</p>
-                                      <span>😍😍😒😒😒 <small>Đã bán: 10,2 k</small></span>
-                                        <div class="d-flex justify-content-end">
-                                            <a href="#" class="btn btn-danger">200.000 <small>đ</small></a>
-                                        </div>
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 d-flex justify-content-center mb-3">
-                                <div class="card" style="width: 18rem;">
-                                    <img src="image/banh-Cheesecake New York.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                      <h5 class="card-title fw-bold">Bánh Cheesecake New York</h5>
-                                      <p class="card-text">Bánh có cấu tạo dạng đặc, mềm mịn với hương vị của đậm đà, ngọt ngào là sự kết hợp hài hoà với các thành phần</p>
-                                      <span>😍😍😍😒😒 <small>Đã bán: 11,2 k</small></span>
-                                      <div class="d-flex justify-content-end">
-                                          <a href="#" class="btn btn-danger">1000.000 <small>đ</small></a>
-                                      </div>
-                                    </div>
-                                  </div>
-                            </div>
+                            </div> -->
+                            
+                            
                         </div>
                     </div>
                     <div class="view-all container">
@@ -331,8 +268,8 @@
                     </div>
                     <!-- Xem tất cả -->
                     <div class="SeeAll container mt-4" id="SP-See-all">
-                        <div class="row">
-                            <div class="col-md-3 col-sm-6 d-flex justify-content-center mb-3">
+                        <div class="ViewAll__SeeAll row">
+                            <!-- <div class="col-md-3 col-sm-6 d-flex justify-content-center mb-3">
                                 <div class="card" style="width: 18rem;">
                                     <div class="Product_img">
                                         <img src="image/Banh-pho-mai-chanh-day.jpg" class="card-img-top" alt="...">
@@ -634,7 +571,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                     </div>
                 </div>
 
@@ -704,39 +641,79 @@
             </div>
         </div>
         <!-- Footer-Coment -->
-        <div class="Coment container border border-1 mt-2 mb-2">
-            <div class="row">
-                <div class="coment-left col-md-6 col-sm-6">
-                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="Coment container border border-1 mt-2 mb-2 ">
+            <div class="row px-2">
+                <div id="Comment-left"  class="coment-left col-md-6 col-sm-12 bg-white p-2  mt-2">
+                    <!-- <div class="comment-item d-flex align-items-center">
+                        <div class="comment-img m-2" style="background-image: url(image/anhDN.jpg);" >
+                        </div>
+                        <h6 class="mt-2">Đào Thị Khuyên</h6>
+                    </div>
+                    <div class="comment-body">
+                        <div class="assess">
+                            <h6 class="ps-4"><small>
+                                <i class="fa-solid fa-star" style="color: #c3be22;"></i>
+                                <i class="fa-solid fa-star" style="color: #c3be22;"></i>
+                                <i class="fa-solid fa-star" style="color: #c3be22;"></i>
+                                <i class="fa-solid fa-star" style="color: #c3be22;"></i>
+                                <i class="fa-solid fa-star" style="color: #c3be22;"></i>
+                            </small></h6>
+                        </div>
+                        <div class="description ps-4">
+                            <a class="fs-6"><small>Bánh Tuyệt quá </small></a>
+                        </div>
+                    </div> -->
+                    <!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                         </div>
-                        <div class="carousel-inner p-1 m-2">
+                        <div id="comment-left-sdlies" class="carousel-inner p-1 m-2" id="">
                             <div class="carousel-item active">
-                                <img src="image/binh-luan2.jpg" class="d-block w-100" alt="first-Picture">
+                                <div class="comment-item d-flex align-items-center">
+                                    <div class="comment-img m-2" style="background-image: url(image/anhDN.jpg);" >
+                                    </div>
+                                    <h6 class="mt-2">Đào Thị Khuyên</h6>
+                                </div>
+                                <div class="comment-body">
+                                    <div class="assess">
+                                        <h6 class="ps-4"><small>
+                                            <i class="fa-solid fa-star" style="color: #c3be22;"></i>
+                                            <i class="fa-solid fa-star" style="color: #c3be22;"></i>
+                                            <i class="fa-solid fa-star" style="color: #c3be22;"></i>
+                                            <i class="fa-solid fa-star" style="color: #c3be22;"></i>
+                                            <i class="fa-solid fa-star" style="color: #c3be22;"></i>
+                                        </small></h6>
+                                    </div>
+                                    <div class="description ps-4">
+                                        <a class="fs-6"><small>Bánh Tuyệt quá </small></a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="carousel-item">
+                            <div class="carousel-item active">
                                 <img src="image/binh-luan3.1.jpg" class="d-block w-100" alt="Second-Picture">
                             </div>
-                            <div class="carousel-item">
+                            <div class="carousel-item active">
                                 <img src="image/binhluan1.jpg" class="d-block w-100" alt="Thrid-Picture">
                             </div>
                         </div>
-                      </div>
+                    </div> -->
                 </div>
 
                 <!-- Coment -->
-                <div class="coment-right col-md-6 col-sm-6 px-5 d-flex justify-content-center align-items-center">
+                <div class="coment-right col-md-6 col-sm-12 px-5 py-3 d-flex justify-content-center align-items-center">
                     <div class="coment-item w-100">
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Địa Chỉ Email</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                            <input type="email" name ="name" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlTextarea1" class="form-label">Nội Dung Bình Luận</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <textarea name="content" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div id="btn" class="d-flex justify-content-end">
+                            <button class="btn send mb-3 text-white">Gửi</button>
                         </div>
                     </div>
                 </div>
@@ -748,13 +725,13 @@
             <div class="container">
                 <div class="footer-header container-fluid">
                     <div class="row">
-                        <div class="col-xl-4 col-md-6 col-sm-12 py-3 ">
+                        <div class="col-xl-4 col-lg-6 col-md-12 col-sm-12 py-3 ">
                             <div class="row d-flex align-items-center justify-content-center">
                                 <div class="col-6">
                                     <img class="w-100" src="image/logo.jpg" alt="">
                                 </div>
                                 <div class="col-6 " style="line-height: 30px;">
-                                    <h5 class="ps-5">Hỗ trợ</h5>
+                                    <h5 class="ps-5"  style="color:#ad795b;">Hỗ trợ</h5>
                                     <p><i class="fa-solid fa-car pe-2" style="color:#ad795b;"></i> Giao Hàng Tận Nơi <br>
                                         <i class="fa-solid fa-headset pe-2" style="color:#ad795b;"></i> Hỗ Trợ Đặt Hàng <br>
                                         <i class="fa-solid fa-credit-card pe-2" style="color:#ad795b;"></i>Thanh Toán Đa Dạng<br>
@@ -763,17 +740,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-8 col-md-6 col-sm-12">
+                        <div class="col-xl-8 col-lg-6 col-md-12 col-sm-12">
                             <div class="row justify-content-between">
                                 <div class="col-md-6 col-sm-12 py-3 d-flex align-items-center justify-content-center" >
                                     <div class="cham_soc_Kh">
-                                        <h5 class=" text-center" style="line-height: 30px;">Chăm Sóc Khách Hàng</h5>
+                                        <h5 class=" text-center" style="line-height: 30px; color: #c39d86;">Chăm Sóc Khách Hàng</h5>
                                         <img class="border border-1 rounded-5" src="image/Cham_soc_KH.png" alt="">
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-12 pt-3 d-flex justify-content-center" style="line-height: 30px;">
                                     <div class="LK_Nhanh">
-                                        <h5 class="ms-5"> Thông Tin </h5>
+                                        <h5 class="ms-5"  style="color:#ad795b;"> Thông Tin </h5>
                                         <p>
                                             <i class="fa-solid fa-magnifying-glass pe-2" style="color:#ad795b;"></i> Giới thiệu website online
                                             <br> <i class="fa-solid fa-cart-shopping pe-2" style="color:#ad795b;"></i> Hệ Thống cửa hàng trên toàn quốc
@@ -799,12 +776,18 @@
                     <i class="fa-solid fa-cake-candles fa-xl" style="color: #ad795b;"></i>&nbsp;  Chào Mừng Bạn Đến Với Chúng Tôi &nbsp; <i class="fa-solid fa-cake-candles fa-xl" style="color: #ad795b;"></i>
             </div>
         </div>
+        <div id="backtop">
+            <i class="fa-solid fa-chevron-up"></i>
+        </div>
     </div>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
 <script src="assets/javscript/script.js"></script>
-<script src="assets/javscript/scriptAction.js"></script>
+<script src="assets/javscript/TRangchu.js"></script>
+<script src="assets/javscript/LienHe.js"></script>
 </body>
 </html>

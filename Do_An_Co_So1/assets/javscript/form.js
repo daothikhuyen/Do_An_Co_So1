@@ -87,7 +87,7 @@ btnDN.addEventListener("click",(e)=>{
                 timer: 1500
               }).then(() => {
                 // Chờ hiệu ứng kết thúc, sau đó chuyển hướng trang
-                localStorage.setItem("isLogin",true);
+                // localStorage.setItem("isLogin",true);
                 window.location.href ="../../index.html";
               });
         }
